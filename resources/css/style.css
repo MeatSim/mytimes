@@ -1,4 +1,6 @@
 .header {
+  background-color: white;
+  border-bottom: 1px solid black;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
@@ -6,10 +8,17 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 5px;
+  position: fixed;
+  z-index: 5;
 }
 
 .header h4 {
   color: MediumAquamarine;
+}
+
+a {
+  color: black;
 }
 
 .logo {
@@ -30,6 +39,7 @@ span {
   display: inline-flex;
   overflow: scroll;
   font-family: Georgia;
+  padding-top: 30px;
 }
 
 .column {
@@ -39,7 +49,9 @@ span {
 }
 
 .subcolumn {
-  flex-direction: column;
+  flex-flow: column wrap;
+  align-content: space-between;
+  justify-content: space-between;
 }
 
 .column.large {
@@ -83,9 +95,10 @@ span {
 .photo h1 {
   font-size: 30px;
   color: white;
+  text-align: center;
 }
 
-p {
+.main p {
   font-size: 17px;
 }
 
@@ -123,4 +136,32 @@ h3 {
   border-bottom: 1px solid black;
   width: 180px;
   padding: 11px 20px;
+}
+
+/* footer */
+.footer {
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 325px;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.footer .links {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer h4 {
+  font-family: Georgia;
+  font-size: 16px;
+  color: white;
+  padding: 2px 20px;
+  border-right: 2px solid white;
 }
