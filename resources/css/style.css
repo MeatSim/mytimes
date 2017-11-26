@@ -29,9 +29,11 @@ span {
 .main {
   display: flex;
   overflow: scroll;
+  font-family: Georgia;
 }
 
 .column {
+  display: flex;
   flex-direction: column;
   margin: 30px 30px 0 0;
 }
@@ -48,7 +50,38 @@ span {
   width: 240px;
 }
 
+.photo {
+  min-height: 300px;
+}
 
+.photo h1 {
+  font-size: 30px;
+  color: white;
+}
+
+p {
+  font-size: 17px;
+}
+
+#mainstory.photo h1 {
+  font-size: 40px;
+}
+
+#mainstory {
+  background-image: url(../images/mainstory.png);
+}
+
+#fallseason {
+  background-image: url(../images/fallseason.png);
+}
+
+#hipster {
+  background-image: url(../images/hipster.png);
+}
+
+#catceo {
+  background-image: url(../images/catceo.png);
+}
 
 div {
   border: 1px solid;
