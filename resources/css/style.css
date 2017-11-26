@@ -1,3 +1,7 @@
+body {
+  margin-top: 0;
+}
+
 .header {
   background-color: white;
   border-bottom: 1px solid black;
@@ -90,6 +94,9 @@ span {
 
 .photo {
   min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .photo h1 {
@@ -98,12 +105,17 @@ span {
   text-align: center;
 }
 
+#mainstory h1 {
+  text-align: left;
+}
+
 .main p {
   font-size: 17px;
 }
 
 #mainstory.photo h1 {
   font-size: 40px;
+  padding-left: 20px;
 }
 
 #mainstory {
@@ -112,6 +124,7 @@ span {
 
 #fallseason {
   background-image: url(../images/fallseason.png);
+  margin-right: 30px;
 }
 
 #hipster {
@@ -120,6 +133,10 @@ span {
 
 #catceo {
   background-image: url(../images/catceo.png);
+}
+
+h2 {
+  font-size: 30px;
 }
 
 h3 {
