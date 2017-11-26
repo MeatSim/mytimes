@@ -13,6 +13,8 @@
 }
 
 .logo {
+  padding-left: 30px;
+  padding-right: auto;
   display: inline-flex;
 }
 
@@ -20,10 +22,34 @@ nav {
   display: inline-block;
 }
 
-nav li a {
-  color: black;
-}
-
 span {
   margin: 0 10px;
+}
+
+.main {
+  display: flex;
+  overflow: scroll;
+}
+
+.column {
+  flex-direction: column;
+  margin: 30px 30px 0 0;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+
+
+div {
+  border: 1px solid;
 }
