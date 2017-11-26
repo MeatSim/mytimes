@@ -27,18 +27,23 @@ span {
 }
 
 .main {
-  display: flex;
+  display: inline-flex;
   overflow: scroll;
   font-family: Georgia;
 }
 
 .column {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   margin: 30px 30px 0 0;
 }
 
+.subcolumn {
+  flex-direction: column;
+}
+
 .column.large {
+  flex-flow: row wrap;
   width: 630px;
 }
 
@@ -48,6 +53,27 @@ span {
 
 .column.small {
   width: 240px;
+  display: flex;
+}
+
+.large .story {
+  width: 300px;
+}
+
+.subcolumn {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  max-height: 600px;
+}
+
+.subcolumn .photo {
+  width: 300px;
+  margin-top: 15px;
+}
+
+.large #main.story {
+  width: 630px;
 }
 
 .photo {
@@ -83,6 +109,18 @@ p {
   background-image: url(../images/catceo.png);
 }
 
-div {
-  border: 1px solid;
+h3 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.bites {
+  display: block;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: 1px solid black;
+  width: 180px;
+  padding: 11px 20px;
 }
